@@ -52,7 +52,7 @@ module.exports = {
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
-    <title>API MICKS</title>
+    <title>API FINANCE</title>
     <meta charset="utf-8">
     <style>
         body {
@@ -68,7 +68,7 @@ module.exports = {
 </style>
   </head>
   <body>
-    <h2> WELCOME API SUPORTE V 2.0  (C) MICKS 2022-2022 </h2>
+    <h2> WELCOME API FINANCE V 0.1  (C) ANDRE 2022-2022 </h2>
     <h1>YOUR ADRESS: ${log.ip}</h1>
     <h1>YOUR PROVIDER: ${resultWhois.ok ? resultWhois.message.org : "127.0.0.1"} </h1>
     <h1>SOURCE PORT: ${log.source_port}<h1>

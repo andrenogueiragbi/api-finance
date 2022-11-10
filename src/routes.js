@@ -18,7 +18,7 @@ routes.post('/auth/refresh',makerLog, Auth.refresh);
 routes.post('/logout',makerLog, Auth.logout);
 
 //ROTA ONLINE
-routes.get('/online',makerLog,online.pageStart);
+routes.get('/online',online.pageStart);
 
 
 
