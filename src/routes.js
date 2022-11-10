@@ -9,9 +9,13 @@ const Auth = require('./controllers/Auth');
 const authMiddleware = require('./middlewares/auth');
 
 routes.get("/test",(req, res) => {
+
+    console.log(req.connection.remoteAddress)
+
+
     return res.status(400).send({
         error: false,
-        res
+        result:  JSON.stringify(req.connection.remoteAddress) 
     });
 })
 
