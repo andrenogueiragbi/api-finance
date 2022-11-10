@@ -13,9 +13,9 @@ routes.get("/test",(req, res) => {
     console.log(req.connection.remoteAddress)
 
 
-    return res.status(400).send({
+    return res.status(200).send({
         error: false,
-        result:  JSON.stringify(req.connection.remoteAddress) 
+        result:  req.connection.remoteAddress
     });
 })
 

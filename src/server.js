@@ -1,4 +1,5 @@
 const express = require('express');
+const morgan = require('morgan');
 const bodyParserErrorHandler = require('express-body-parser-error-handler')
 const routes = require('./routes');
 const cors = require('cors');
@@ -17,7 +18,7 @@ app.use(bodyParserErrorHandler({
 		return "body is not a json";
 	}
 }))
-//app.use(morgan('combined'));
+app.use(morgan('combined'));
 app.use(routes);
 
 app.listen(process.env.PORT || 3000, () =>{
