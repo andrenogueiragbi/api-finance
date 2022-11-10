@@ -8,6 +8,9 @@ module.exports = {
 
     resultWhois = await whois(req.connection.remoteAddress.split('::ffff:')[1])
 
+    console.log(req.connection.remoteAddress.split('::ffff:')[1])
+
+
     const browser = req.connection.parser.incoming.socket.parser.incoming.rawHeaders || "undefined"
     let browserUser = ""
     if (browser.length == 8) {

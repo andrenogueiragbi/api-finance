@@ -8,8 +8,11 @@ const User = require('./controllers/User');
 const Auth = require('./controllers/Auth');
 const authMiddleware = require('./middlewares/auth');
 
-routes.get("/",makerLog, authMiddleware,(req, res) => {
-    res.send("hello I'm runnig 4000")
+routes.get("/test",(req, res) => {
+    return res.status(400).send({
+        error: false,
+        res
+    });
 })
 
 //ROTA LOGIN
